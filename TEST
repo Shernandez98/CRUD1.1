@@ -1,0 +1,21 @@
+package com.umg.test;
+
+import java.util.Scanner;
+
+//import java.util.Scanner;
+
+import com.umg.dao.TestDao;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//TestDao.estudiante("Selvin", "ottoniel", "hernandez", "muñoz", "masculina", "1998-01-07", "55702114", "3026115410103", "600.00", "Selvin");
+		
+		System.out.println("Ingresa los datos solicitados");
+		Scanner scanner = new Scanner(System.in);
+		
+		TestDao.estudiante(scanner.nextLine(),scanner.nextLine(),scanner.nextLine(),scanner.nextLine(),scanner.nextLine(),scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextLine());
+	}
+
+}
